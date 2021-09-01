@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftyColor",
+        "repositoryURL": "https://github.com/devxoul/SwiftyColor",
+        "state": {
+          "branch": null,
+          "revision": "4b169b77446ef1d9878b162a0a38258f7563ed5b",
+          "version": "1.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

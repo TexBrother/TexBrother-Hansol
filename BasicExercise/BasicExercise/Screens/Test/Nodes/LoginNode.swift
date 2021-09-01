@@ -21,7 +21,7 @@ final class LoginNode: ASDisplayNode {
   private let logoImageNode: ASImageNode = {
     let node = ASImageNode()
     node.image = UIImage(named: "image")
-    node.contentMode = .scaleAspectFill
+    node.contentMode = .scaleAspectFit
     return node
   }()
   
@@ -66,6 +66,9 @@ final class LoginNode: ASDisplayNode {
     node.attributedPlaceholderText = NSAttributedString(
       string: "yourpassword",
       attributes: [.foregroundColor: UIColor.gray])
+    node.borderWidth = 1
+    node.borderColor = UIColor.black.cgColor
+    node.isSecureTextEntry = true
     return node
   }()
   
@@ -76,7 +79,7 @@ final class LoginNode: ASDisplayNode {
                   with: .white,
                   for: .normal)
     node.backgroundColor = .gray
-    node.cornerRadius = 24.5
+    node.cornerRadius = 20
     return node
   }()
   
@@ -125,9 +128,7 @@ final class LoginNode: ASDisplayNode {
     let insets = UIEdgeInsets(top: 0, left: 90, bottom: 0, right: 90)
     
     return ASInsetLayoutSpec(insets: insets,
-                             child: logoImageNode.styled {
-                              $0.height = ASDimension(unit: .points, value: 105.0)
-                             })
+                             child: logoImageNode)
   }
   
   private func emailNodeLayoutSpec() -> ASLayoutSpec {
@@ -145,7 +146,8 @@ final class LoginNode: ASDisplayNode {
                                         spacing: 10.0,
                                         justifyContent: .start,
                                         alignItems: .start,
-                                        children: [passwordTextNode, passwordEditableTextNode])
+                                        children: [passwordTextNode,
+                                                   passwordEditableTextNode])
     return stackLayout
   }
   
@@ -164,7 +166,8 @@ final class LoginNode: ASDisplayNode {
                                         spacing: 18.0,
                                         justifyContent: .center,
                                         alignItems: .stretch,
-                                        children: [findPasswordTextNode, signinTextNode])
+                                        children: [findPasswordTextNode,
+                                                   signinTextNode])
     return stackLayout
   }
   
@@ -178,7 +181,7 @@ final class LoginNode: ASDisplayNode {
     let stackLayout = ASStackLayoutSpec(direction: .vertical,
                                          spacing: 17.0,
                                          justifyContent: .center,
-                                         alignItems: .center,
+                                         alignItems: .stretch,
                                          children: [loginButtonNodeLayoutSpec(),
                                                     buttonNodeLayoutSpec()])
     return stackLayout
@@ -188,7 +191,7 @@ final class LoginNode: ASDisplayNode {
     let stackLayout = ASStackLayoutSpec(direction: .vertical,
                                          spacing: 44.0,
                                          justifyContent: .center,
-                                         alignItems: .center,
+                                         alignItems: .stretch,
                                          children: [editableTextNodeLayoutSpec(),
                                                     loginAndButtonsLayoutSpec()])
     return stackLayout
@@ -198,7 +201,7 @@ final class LoginNode: ASDisplayNode {
     let stackLayout = ASStackLayoutSpec(direction: .vertical,
                                          spacing: 84.0,
                                          justifyContent: .center,
-                                         alignItems: .center,
+                                         alignItems: .stretch,
                                          children: [logoImageNodeLayoutSpec(),
                                                     TextAndButtonLayoutSpec()])
     return stackLayout

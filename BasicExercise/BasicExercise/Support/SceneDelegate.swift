@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     if let windowScene = scene as? UIWindowScene {
       
       let window = UIWindow(windowScene: windowScene)
-      let rootVC = LoginNodeController()
+      let rootVC = KakaoFriendNodeController()
       rootVC.view.backgroundColor = .white
       window.rootViewController = rootVC
       self.window = window

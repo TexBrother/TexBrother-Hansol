@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,18 @@
 		CC7C390126BA59930015CA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7C38FF26BA59930015CA0B /* Main.storyboard */; };
 		CC7C390326BA59970015CA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7C390226BA59970015CA0B /* Assets.xcassets */; };
 		CC7C390626BA59970015CA0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC7C390426BA59970015CA0B /* LaunchScreen.storyboard */; };
+		CC8A24C426D5E11C005FA8B5 /* KakaoFriendNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A24C326D5E11C005FA8B5 /* KakaoFriendNodeController.swift */; };
+		CC8A24CA26D5E2E7005FA8B5 /* KakaoFriendTopNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A24C926D5E2E7005FA8B5 /* KakaoFriendTopNode.swift */; };
+		CC8A24CC26D5E30C005FA8B5 /* KakaoUserProfileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A24CB26D5E30C005FA8B5 /* KakaoUserProfileNode.swift */; };
+		CC8A24D126D5E336005FA8B5 /* KakaoFriendCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A24D026D5E336005FA8B5 /* KakaoFriendCellNode.swift */; };
+		CC8A24D426D5ECB8005FA8B5 /* KakaoFriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A24D326D5ECB8005FA8B5 /* KakaoFriendsModel.swift */; };
+		CCBAFFB326DF5B1600F0057A /* AppleMusicNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAFFB226DF5B1600F0057A /* AppleMusicNodeController.swift */; };
+		CCBAFFB626DF606B00F0057A /* AppleMusicCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAFFB526DF606B00F0057A /* AppleMusicCellNode.swift */; };
+		CCBAFFB826DF613A00F0057A /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBAFFB726DF613A00F0057A /* MusicModel.swift */; };
+		CCDB6E3326CD375800797932 /* AppstoreMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB6E3226CD375800797932 /* AppstoreMainViewController.swift */; };
+		CCDB6E3726CD37C700797932 /* AppstoreMainTopNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB6E3626CD37C700797932 /* AppstoreMainTopNode.swift */; };
+		CCDB6E3926CD37D600797932 /* AppstoreMainImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB6E3826CD37D600797932 /* AppstoreMainImageNode.swift */; };
+		CCDB6E3C26CD39A200797932 /* SwiftyColor in Frameworks */ = {isa = PBXBuildFile; productRef = CCDB6E3B26CD39A200797932 /* SwiftyColor */; };
 		F696F4311B24C85B33CCDA36 /* Pods_BasicExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBA379DDE694AE2CBBFCD36 /* Pods_BasicExercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +47,17 @@
 		CC7C390226BA59970015CA0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC7C390526BA59970015CA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC7C390726BA59970015CA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8A24C326D5E11C005FA8B5 /* KakaoFriendNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoFriendNodeController.swift; sourceTree = "<group>"; };
+		CC8A24C926D5E2E7005FA8B5 /* KakaoFriendTopNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoFriendTopNode.swift; sourceTree = "<group>"; };
+		CC8A24CB26D5E30C005FA8B5 /* KakaoUserProfileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoUserProfileNode.swift; sourceTree = "<group>"; };
+		CC8A24D026D5E336005FA8B5 /* KakaoFriendCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoFriendCellNode.swift; sourceTree = "<group>"; };
+		CC8A24D326D5ECB8005FA8B5 /* KakaoFriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoFriendsModel.swift; sourceTree = "<group>"; };
+		CCBAFFB226DF5B1600F0057A /* AppleMusicNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicNodeController.swift; sourceTree = "<group>"; };
+		CCBAFFB526DF606B00F0057A /* AppleMusicCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicCellNode.swift; sourceTree = "<group>"; };
+		CCBAFFB726DF613A00F0057A /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		CCDB6E3226CD375800797932 /* AppstoreMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreMainViewController.swift; sourceTree = "<group>"; };
+		CCDB6E3626CD37C700797932 /* AppstoreMainTopNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreMainTopNode.swift; sourceTree = "<group>"; };
+		CCDB6E3826CD37D600797932 /* AppstoreMainImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreMainImageNode.swift; sourceTree = "<group>"; };
 		EFBA379DDE694AE2CBBFCD36 /* Pods_BasicExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDB6E3C26CD39A200797932 /* SwiftyColor in Frameworks */,
 				F696F4311B24C85B33CCDA36 /* Pods_BasicExercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +96,8 @@
 			children = (
 				CC65303326C3B26300F031CD /* TestNode.swift */,
 				CC65303B26C3B45D00F031CD /* LoginNode.swift */,
+				CCDB6E3626CD37C700797932 /* AppstoreMainTopNode.swift */,
+				CCDB6E3826CD37D600797932 /* AppstoreMainImageNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -89,8 +115,9 @@
 		CC65303926C3B43100F031CD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				CC65303A26C3B44100F031CD /* ViewControllers */,
-				CC65303726C3B40700F031CD /* Nodes */,
+				CCBAFFAE26DF5AA300F0057A /* AppleMusicTest */,
+				CC8A24C826D5E299005FA8B5 /* Test */,
+				CC8A24C526D5E280005FA8B5 /* KakaoTest */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -101,6 +128,7 @@
 				CC65303526C3B28900F031CD /* TestNodeController.swift */,
 				CC7C38FD26BA59930015CA0B /* ViewController.swift */,
 				CC65303D26C3B8CC00F031CD /* LoginNodeController.swift */,
+				CCDB6E3226CD375800797932 /* AppstoreMainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -126,13 +154,108 @@
 		CC7C38F826BA59930015CA0B /* BasicExercise */ = {
 			isa = PBXGroup;
 			children = (
-				CC65303926C3B43100F031CD /* Screens */,
 				CC65303826C3B41600F031CD /* Support */,
+				CC65303926C3B43100F031CD /* Screens */,
 				CC7C38FF26BA59930015CA0B /* Main.storyboard */,
 				CC7C390426BA59970015CA0B /* LaunchScreen.storyboard */,
 				CC7C390726BA59970015CA0B /* Info.plist */,
 			);
 			path = BasicExercise;
+			sourceTree = "<group>";
+		};
+		CC8A24C526D5E280005FA8B5 /* KakaoTest */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A24D226D5ECAB005FA8B5 /* Models */,
+				CC8A24CF26D5E324005FA8B5 /* Reusables */,
+				CC8A24C726D5E294005FA8B5 /* Nodes */,
+				CC8A24C626D5E288005FA8B5 /* Controllers */,
+			);
+			path = KakaoTest;
+			sourceTree = "<group>";
+		};
+		CC8A24C626D5E288005FA8B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A24C326D5E11C005FA8B5 /* KakaoFriendNodeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CC8A24C726D5E294005FA8B5 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A24C926D5E2E7005FA8B5 /* KakaoFriendTopNode.swift */,
+				CC8A24CB26D5E30C005FA8B5 /* KakaoUserProfileNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		CC8A24C826D5E299005FA8B5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				CC65303726C3B40700F031CD /* Nodes */,
+				CC65303A26C3B44100F031CD /* ViewControllers */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		CC8A24CF26D5E324005FA8B5 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A24D026D5E336005FA8B5 /* KakaoFriendCellNode.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		CC8A24D226D5ECAB005FA8B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC8A24D326D5ECB8005FA8B5 /* KakaoFriendsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCBAFFAE26DF5AA300F0057A /* AppleMusicTest */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAFFB426DF5B3000F0057A /* Models */,
+				CCBAFFB126DF5ACB00F0057A /* Reusables */,
+				CCBAFFB026DF5AC500F0057A /* Nodes */,
+				CCBAFFAF26DF5ABF00F0057A /* Controllers */,
+			);
+			path = AppleMusicTest;
+			sourceTree = "<group>";
+		};
+		CCBAFFAF26DF5ABF00F0057A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAFFB226DF5B1600F0057A /* AppleMusicNodeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CCBAFFB026DF5AC500F0057A /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		CCBAFFB126DF5ACB00F0057A /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAFFB526DF606B00F0057A /* AppleMusicCellNode.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		CCBAFFB426DF5B3000F0057A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCBAFFB726DF613A00F0057A /* MusicModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +276,9 @@
 			dependencies = (
 			);
 			name = BasicExercise;
+			packageProductDependencies = (
+				CCDB6E3B26CD39A200797932 /* SwiftyColor */,
+			);
 			productName = BasicExercise;
 			productReference = CC7C38F626BA59930015CA0B /* BasicExercise.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +306,9 @@
 				Base,
 			);
 			mainGroup = CC7C38ED26BA59920015CA0B;
+			packageReferences = (
+				CCDB6E3A26CD39A200797932 /* XCRemoteSwiftPackageReference "SwiftyColor" */,
+			);
 			productRefGroup = CC7C38F726BA59930015CA0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,13 +378,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8A24CC26D5E30C005FA8B5 /* KakaoUserProfileNode.swift in Sources */,
+				CCDB6E3726CD37C700797932 /* AppstoreMainTopNode.swift in Sources */,
 				CC7C38FE26BA59930015CA0B /* ViewController.swift in Sources */,
 				CC7C38FA26BA59930015CA0B /* AppDelegate.swift in Sources */,
+				CC8A24D426D5ECB8005FA8B5 /* KakaoFriendsModel.swift in Sources */,
+				CCDB6E3326CD375800797932 /* AppstoreMainViewController.swift in Sources */,
+				CCBAFFB326DF5B1600F0057A /* AppleMusicNodeController.swift in Sources */,
 				CC7C38FC26BA59930015CA0B /* SceneDelegate.swift in Sources */,
+				CC8A24C426D5E11C005FA8B5 /* KakaoFriendNodeController.swift in Sources */,
 				CC65303E26C3B8CC00F031CD /* LoginNodeController.swift in Sources */,
+				CCDB6E3926CD37D600797932 /* AppstoreMainImageNode.swift in Sources */,
+				CCBAFFB826DF613A00F0057A /* MusicModel.swift in Sources */,
+				CC8A24D126D5E336005FA8B5 /* KakaoFriendCellNode.swift in Sources */,
+				CCBAFFB626DF606B00F0057A /* AppleMusicCellNode.swift in Sources */,
 				CC65303426C3B26300F031CD /* TestNode.swift in Sources */,
 				CC65303626C3B28900F031CD /* TestNodeController.swift in Sources */,
 				CC65303C26C3B45D00F031CD /* LoginNode.swift in Sources */,
+				CC8A24CA26D5E2E7005FA8B5 /* KakaoFriendTopNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCDB6E3A26CD39A200797932 /* XCRemoteSwiftPackageReference "SwiftyColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/SwiftyColor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCDB6E3B26CD39A200797932 /* SwiftyColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDB6E3A26CD39A200797932 /* XCRemoteSwiftPackageReference "SwiftyColor" */;
+			productName = SwiftyColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC7C38EE26BA59930015CA0B /* Project object */;
 }
