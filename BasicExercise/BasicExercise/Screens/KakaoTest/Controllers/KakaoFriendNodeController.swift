@@ -96,10 +96,10 @@ extension KakaoFriendNodeController {
   private func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
     return ASInsetLayoutSpec(
         insets: UIEdgeInsets(
-                              top: 56,
-                              left: 14,
-                              bottom: 0,
-                              right: 14),
+            top: 56,
+            left: 14,
+            bottom: 0,
+            right: 14),
         child: subnodesStackLayoutSpec())
   }
   

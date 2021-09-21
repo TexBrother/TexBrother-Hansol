@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912A93FCF008DEC8C2D9A8D9 /* Pods_Starbucks_Clone_TexBrother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */; };
+		CCDD92B826FA28C7008B3D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92B726FA28C7008B3D8A /* AppDelegate.swift */; };
+		CCDD92BA26FA28C7008B3D8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92B926FA28C7008B3D8A /* SceneDelegate.swift */; };
+		CCDD92BC26FA28C7008B3D8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92BB26FA28C7008B3D8A /* ViewController.swift */; };
+		CCDD92BF26FA28C7008B3D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDD92BD26FA28C7008B3D8A /* Main.storyboard */; };
+		CCDD92C126FA28CA008B3D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDD92C026FA28CA008B3D8A /* Assets.xcassets */; };
+		CCDD92C426FA28CA008B3D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDD92C226FA28CA008B3D8A /* LaunchScreen.storyboard */; };
+		CCDD92CE26FA2AA1008B3D8A /* StarbucksTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92CD26FA2AA1008B3D8A /* StarbucksTabBarController.swift */; };
+		CCDD92D126FA2BAB008B3D8A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = CCDD92D026FA2BAB008B3D8A /* Then */; };
+		CCDD92D426FA2BEA008B3D8A /* SwiftyColor in Frameworks */ = {isa = PBXBuildFile; productRef = CCDD92D326FA2BEA008B3D8A /* SwiftyColor */; };
+		CCDD92DA26FA2DA3008B3D8A /* PayNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92D926FA2DA3008B3D8A /* PayNodeController.swift */; };
+		CCDD92DD26FA33AA008B3D8A /* BaseScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92DC26FA33AA008B3D8A /* BaseScrollNode.swift */; };
+		CCDD92E126FA37F0008B3D8A /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92E026FA37F0008B3D8A /* CustomNavigationBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CCDD92B426FA28C7008B3D8A /* Starbucks_Clone_TexBrother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks_Clone_TexBrother.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCDD92B726FA28C7008B3D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCDD92B926FA28C7008B3D8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CCDD92BB26FA28C7008B3D8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCDD92BE26FA28C7008B3D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCDD92C026FA28CA008B3D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCDD92C326FA28CA008B3D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCDD92C526FA28CA008B3D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDD92CD26FA2AA1008B3D8A /* StarbucksTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksTabBarController.swift; sourceTree = "<group>"; };
+		CCDD92D926FA2DA3008B3D8A /* PayNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNodeController.swift; sourceTree = "<group>"; };
+		CCDD92DC26FA33AA008B3D8A /* BaseScrollNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollNode.swift; sourceTree = "<group>"; };
+		CCDD92E026FA37F0008B3D8A /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starbucks_Clone_TexBrother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF822A713505798452F11100 /* Pods-Starbucks_Clone_TexBrother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starbucks_Clone_TexBrother.debug.xcconfig"; path = "Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B8769D1B4DCD3E98B54AB6 /* Pods-Starbucks_Clone_TexBrother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starbucks_Clone_TexBrother.release.xcconfig"; path = "Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCDD92B126FA28C7008B3D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912A93FCF008DEC8C2D9A8D9 /* Pods_Starbucks_Clone_TexBrother.framework in Frameworks */,
+				CCDD92D426FA2BEA008B3D8A /* SwiftyColor in Frameworks */,
+				CCDD92D126FA2BAB008B3D8A /* Then in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261C259A99A737AA39AF67B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF822A713505798452F11100 /* Pods-Starbucks_Clone_TexBrother.debug.xcconfig */,
+				E6B8769D1B4DCD3E98B54AB6 /* Pods-Starbucks_Clone_TexBrother.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3893B57B8FBCD0B1AF91316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCDD92AB26FA28C7008B3D8A = {
+			isa = PBXGroup;
+			children = (
+				CCDD92B626FA28C7008B3D8A /* Starbucks_Clone_TexBrother */,
+				CCDD92B526FA28C7008B3D8A /* Products */,
+				261C259A99A737AA39AF67B5 /* Pods */,
+				C3893B57B8FBCD0B1AF91316 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCDD92B526FA28C7008B3D8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92B426FA28C7008B3D8A /* Starbucks_Clone_TexBrother.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCDD92B626FA28C7008B3D8A /* Starbucks_Clone_TexBrother */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92DE26FA37BF008B3D8A /* Global */,
+				CCDD92CC26FA2A7B008B3D8A /* Supports */,
+				CCDD92CB26FA2A51008B3D8A /* Screens */,
+				CCDD92BB26FA28C7008B3D8A /* ViewController.swift */,
+				CCDD92BD26FA28C7008B3D8A /* Main.storyboard */,
+				CCDD92C026FA28CA008B3D8A /* Assets.xcassets */,
+				CCDD92C226FA28CA008B3D8A /* LaunchScreen.storyboard */,
+			);
+			path = Starbucks_Clone_TexBrother;
+			sourceTree = "<group>";
+		};
+		CCDD92CB26FA2A51008B3D8A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92DB26FA3393008B3D8A /* Base */,
+				CCDD92D526FA2D5B008B3D8A /* Pay */,
+				CCDD92CD26FA2AA1008B3D8A /* StarbucksTabBarController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CCDD92CC26FA2A7B008B3D8A /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92C526FA28CA008B3D8A /* Info.plist */,
+				CCDD92B726FA28C7008B3D8A /* AppDelegate.swift */,
+				CCDD92B926FA28C7008B3D8A /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		CCDD92D526FA2D5B008B3D8A /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92D826FA2D83008B3D8A /* Nodes */,
+				CCDD92D726FA2D6B008B3D8A /* NodeControllers */,
+				CCDD92D626FA2D63008B3D8A /* Cells */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		CCDD92D626FA2D63008B3D8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CCDD92D726FA2D6B008B3D8A /* NodeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92D926FA2DA3008B3D8A /* PayNodeController.swift */,
+			);
+			path = NodeControllers;
+			sourceTree = "<group>";
+		};
+		CCDD92D826FA2D83008B3D8A /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		CCDD92DB26FA3393008B3D8A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92DC26FA33AA008B3D8A /* BaseScrollNode.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CCDD92DE26FA37BF008B3D8A /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92DF26FA37C7008B3D8A /* Customs */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CCDD92DF26FA37C7008B3D8A /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				CCDD92E026FA37F0008B3D8A /* CustomNavigationBar.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCDD92B326FA28C7008B3D8A /* Starbucks_Clone_TexBrother */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCDD92C826FA28CA008B3D8A /* Build configuration list for PBXNativeTarget "Starbucks_Clone_TexBrother" */;
+			buildPhases = (
+				932A9697733A188365731500 /* [CP] Check Pods Manifest.lock */,
+				CCDD92B026FA28C7008B3D8A /* Sources */,
+				CCDD92B126FA28C7008B3D8A /* Frameworks */,
+				CCDD92B226FA28C7008B3D8A /* Resources */,
+				9F6A62987C311935EF7B541C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starbucks_Clone_TexBrother;
+			packageProductDependencies = (
+				CCDD92D026FA2BAB008B3D8A /* Then */,
+				CCDD92D326FA2BEA008B3D8A /* SwiftyColor */,
+			);
+			productName = Starbucks_Clone_TexBrother;
+			productReference = CCDD92B426FA28C7008B3D8A /* Starbucks_Clone_TexBrother.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCDD92AC26FA28C7008B3D8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CCDD92B326FA28C7008B3D8A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = CCDD92AF26FA28C7008B3D8A /* Build configuration list for PBXProject "Starbucks_Clone_TexBrother" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCDD92AB26FA28C7008B3D8A;
+			packageReferences = (
+				CCDD92CF26FA2BAB008B3D8A /* XCRemoteSwiftPackageReference "Then" */,
+				CCDD92D226FA2BEA008B3D8A /* XCRemoteSwiftPackageReference "SwiftyColor" */,
+			);
+			productRefGroup = CCDD92B526FA28C7008B3D8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCDD92B326FA28C7008B3D8A /* Starbucks_Clone_TexBrother */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCDD92B226FA28C7008B3D8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDD92C426FA28CA008B3D8A /* LaunchScreen.storyboard in Resources */,
+				CCDD92C126FA28CA008B3D8A /* Assets.xcassets in Resources */,
+				CCDD92BF26FA28C7008B3D8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		932A9697733A188365731500 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Starbucks_Clone_TexBrother-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6A62987C311935EF7B541C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCDD92B026FA28C7008B3D8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDD92BC26FA28C7008B3D8A /* ViewController.swift in Sources */,
+				CCDD92DA26FA2DA3008B3D8A /* PayNodeController.swift in Sources */,
+				CCDD92B826FA28C7008B3D8A /* AppDelegate.swift in Sources */,
+				CCDD92BA26FA28C7008B3D8A /* SceneDelegate.swift in Sources */,
+				CCDD92CE26FA2AA1008B3D8A /* StarbucksTabBarController.swift in Sources */,
+				CCDD92DD26FA33AA008B3D8A /* BaseScrollNode.swift in Sources */,
+				CCDD92E126FA37F0008B3D8A /* CustomNavigationBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCDD92BD26FA28C7008B3D8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCDD92BE26FA28C7008B3D8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCDD92C226FA28CA008B3D8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCDD92C326FA28CA008B3D8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCDD92C626FA28CA008B3D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCDD92C726FA28CA008B3D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCDD92C926FA28CA008B3D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF822A713505798452F11100 /* Pods-Starbucks_Clone_TexBrother.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS42RPKQCD;
+				INFOPLIST_FILE = Starbucks_Clone_TexBrother/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ryan.Starbucks-Clone-TexBrother";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCDD92CA26FA28CA008B3D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B8769D1B4DCD3E98B54AB6 /* Pods-Starbucks_Clone_TexBrother.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS42RPKQCD;
+				INFOPLIST_FILE = Starbucks_Clone_TexBrother/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ryan.Starbucks-Clone-TexBrother";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCDD92AF26FA28C7008B3D8A /* Build configuration list for PBXProject "Starbucks_Clone_TexBrother" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDD92C626FA28CA008B3D8A /* Debug */,
+				CCDD92C726FA28CA008B3D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDD92C826FA28CA008B3D8A /* Build configuration list for PBXNativeTarget "Starbucks_Clone_TexBrother" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDD92C926FA28CA008B3D8A /* Debug */,
+				CCDD92CA26FA28CA008B3D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCDD92CF26FA2BAB008B3D8A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		CCDD92D226FA2BEA008B3D8A /* XCRemoteSwiftPackageReference "SwiftyColor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/SwiftyColor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCDD92D026FA2BAB008B3D8A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDD92CF26FA2BAB008B3D8A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		CCDD92D326FA2BEA008B3D8A /* SwiftyColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDD92D226FA2BEA008B3D8A /* XCRemoteSwiftPackageReference "SwiftyColor" */;
+			productName = SwiftyColor;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CCDD92AC26FA28C7008B3D8A /* Project object */;
+}
