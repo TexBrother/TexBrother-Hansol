@@ -8,6 +8,7 @@
 import UIKit
 
 import AsyncDisplayKit
+import Then
 
 // MARK: - PayNodeController
 
@@ -26,10 +27,32 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
     
     // MARK: - Components
     
-    private let listIcon: ASImageNode = {
-        let node = ASImageNode()
-        node.backgroundColor = .black
+    private let navigationView: CustomNavigationBar = {
+        let node = CustomNavigationBar()
+        node.setupBar(isBackButton: false, right: "")
+        node.style.height = ASDimension(unit: .points, value: 30)
         return node
+    }()
+    
+    private let titleLabel = ASTextNode().then {
+        $0.attributedText = NSAttributedString(
+            string: "Pay",
+            attributes: [
+                .font: UIFont.boldSystemFont(ofSize: 24),
+                .foregroundColor: UIColor.black
+            ]
+        )
+    }
+    
+    private let menuView = PayMenuNode().then {
+        $0.backgroundColor = .clear
+        $0.style.height = ASDimension(unit: .points, value: 40)
+    }
+    
+    private let bannerButton: ASButtonNode = {
+        let node = ASButtonNode()
+        node.backgroundColor = .black
+        node.style.height = ASDimension(unit: .points, value: 60)
     }()
     
     

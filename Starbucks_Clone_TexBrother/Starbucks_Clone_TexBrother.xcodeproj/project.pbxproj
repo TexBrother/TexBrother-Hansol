@@ -20,6 +20,7 @@
 		CCDD92DA26FA2DA3008B3D8A /* PayNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92D926FA2DA3008B3D8A /* PayNodeController.swift */; };
 		CCDD92DD26FA33AA008B3D8A /* BaseScrollNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92DC26FA33AA008B3D8A /* BaseScrollNode.swift */; };
 		CCDD92E126FA37F0008B3D8A /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92E026FA37F0008B3D8A /* CustomNavigationBar.swift */; };
+		CCDD92E326FB043E008B3D8A /* PayMenuNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92E226FB043E008B3D8A /* PayMenuNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CCDD92D926FA2DA3008B3D8A /* PayNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNodeController.swift; sourceTree = "<group>"; };
 		CCDD92DC26FA33AA008B3D8A /* BaseScrollNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollNode.swift; sourceTree = "<group>"; };
 		CCDD92E026FA37F0008B3D8A /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		CCDD92E226FB043E008B3D8A /* PayMenuNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMenuNode.swift; sourceTree = "<group>"; };
 		D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starbucks_Clone_TexBrother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF822A713505798452F11100 /* Pods-Starbucks_Clone_TexBrother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starbucks_Clone_TexBrother.debug.xcconfig"; path = "Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother.debug.xcconfig"; sourceTree = "<group>"; };
 		E6B8769D1B4DCD3E98B54AB6 /* Pods-Starbucks_Clone_TexBrother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starbucks_Clone_TexBrother.release.xcconfig"; path = "Target Support Files/Pods-Starbucks_Clone_TexBrother/Pods-Starbucks_Clone_TexBrother.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		CCDD92D826FA2D83008B3D8A /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				CCDD92E226FB043E008B3D8A /* PayMenuNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDD92BC26FA28C7008B3D8A /* ViewController.swift in Sources */,
+				CCDD92E326FB043E008B3D8A /* PayMenuNode.swift in Sources */,
 				CCDD92DA26FA2DA3008B3D8A /* PayNodeController.swift in Sources */,
 				CCDD92B826FA28C7008B3D8A /* AppDelegate.swift in Sources */,
 				CCDD92BA26FA28C7008B3D8A /* SceneDelegate.swift in Sources */,
