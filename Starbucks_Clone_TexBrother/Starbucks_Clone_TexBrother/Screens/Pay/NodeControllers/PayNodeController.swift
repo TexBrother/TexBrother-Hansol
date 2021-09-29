@@ -110,7 +110,7 @@ extension PayNodeController {
         let layout = ASStackLayoutSpec(
             direction: .vertical,
             spacing: 0,
-            justifyContent: .spaceBetween,
+            justifyContent: .spaceAround,
             alignItems: .center,
             children: [navigationView, titleLabel, cardCollectionNode, menuView, bannerButton])
         return layout
@@ -139,6 +139,7 @@ extension PayNodeController: ASCollectionDataSource {
         return {
             guard self.cardList.count > indexPath.row else { return ASCellNode() }
             let payCell = PayCardCollectionViewCell()
+//            payCell.layer.applyCardShadow()
             payCell.dataBind(
                 cardImage: self.cardList[indexPath.item].cardImageName,
                 title: self.cardList[indexPath.item].title,

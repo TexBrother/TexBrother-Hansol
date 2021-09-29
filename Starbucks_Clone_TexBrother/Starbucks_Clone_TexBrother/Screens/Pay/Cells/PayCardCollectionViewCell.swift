@@ -136,7 +136,6 @@ final class PayCardCollectionViewCell: ASCellNode {
         super.init()
         self.automaticallyManagesSubnodes = true
         self.automaticallyRelayoutOnSafeAreaChanges = true
-        self.layer.applyCardShadow()
     }
 }
 

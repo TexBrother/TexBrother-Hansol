@@ -26,12 +26,12 @@ final class StarbucksTabBarController: ASTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.selectedIndex = defaultIndex
-        config()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupTabBar()
+        config()
     }
 }
 
@@ -62,7 +62,29 @@ extension StarbucksTabBarController {
     }
     
     private func config() {
+        
+        let icons = ["homeIcon", "payIcon", "orderIcon", "giftIcon", "otherIcon"]
+        let selectedIcons = [
+            "homeSelectedIcon",
+            "paySelectedIcon",
+            "orderSelectedIcon",
+            "giftSelectedIcon",
+            "otherSelectedIcon"
+        ]
+        
         tabBar.isTranslucent = false
         tabBar.tintColor = .systemGreen
+        tabBar.backgroundColor = .systemGray6
+        tabBar.barStyle = .default
+        
+        for (index, value) in (tabBar.items?.enumerated())! {
+            let tabBarItem: UITabBarItem = value as UITabBarItem
+            tabBarItem.title = nil
+            tabBarItem.image = UIImage(named: icons[index])?.withRenderingMode(.alwaysOriginal)
+            tabBarItem.selectedImage = UIImage(named: selectedIcons[index])?.withRenderingMode(.alwaysOriginal)
+            tabBarItem.accessibilityIdentifier = icons[index]
+            tabBarItem.imageInsets.top = 15
+            tabBarItem.imageInsets.bottom = -15
+        }
     }
 }
