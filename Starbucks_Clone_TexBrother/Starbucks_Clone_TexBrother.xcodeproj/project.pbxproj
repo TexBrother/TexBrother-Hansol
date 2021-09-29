@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		912A93FCF008DEC8C2D9A8D9 /* Pods_Starbucks_Clone_TexBrother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */; };
+		CC3806FD2703F76F006AA4AF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3806FC2703F76F006AA4AF /* CardModel.swift */; };
+		CC3806FF2703F7C7006AA4AF /* PayCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3806FE2703F7C7006AA4AF /* PayCardCollectionViewCell.swift */; };
+		CC3807022703FAD1006AA4AF /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3807012703FAD0006AA4AF /* UIColor+.swift */; };
+		CC3807042704018C006AA4AF /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3807032704018C006AA4AF /* CALayer+.swift */; };
 		CCDD92B826FA28C7008B3D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92B726FA28C7008B3D8A /* AppDelegate.swift */; };
 		CCDD92BA26FA28C7008B3D8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92B926FA28C7008B3D8A /* SceneDelegate.swift */; };
 		CCDD92BC26FA28C7008B3D8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD92BB26FA28C7008B3D8A /* ViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC3806FC2703F76F006AA4AF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		CC3806FE2703F7C7006AA4AF /* PayCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC3807012703FAD0006AA4AF /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		CC3807032704018C006AA4AF /* CALayer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+.swift"; sourceTree = "<group>"; };
 		CCDD92B426FA28C7008B3D8A /* Starbucks_Clone_TexBrother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks_Clone_TexBrother.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDD92B726FA28C7008B3D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDD92B926FA28C7008B3D8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +79,23 @@
 				D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC3806FB2703F756006AA4AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC3806FC2703F76F006AA4AF /* CardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC3807002703FAC2006AA4AF /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC3807012703FAD0006AA4AF /* UIColor+.swift */,
+				CC3807032704018C006AA4AF /* CALayer+.swift */,
+			);
+			path = UIExtensions;
 			sourceTree = "<group>";
 		};
 		CCDD92AB26FA28C7008B3D8A = {
@@ -128,6 +153,7 @@
 		CCDD92D526FA2D5B008B3D8A /* Pay */ = {
 			isa = PBXGroup;
 			children = (
+				CC3806FB2703F756006AA4AF /* Models */,
 				CCDD92D826FA2D83008B3D8A /* Nodes */,
 				CCDD92D726FA2D6B008B3D8A /* NodeControllers */,
 				CCDD92D626FA2D63008B3D8A /* Cells */,
@@ -138,6 +164,7 @@
 		CCDD92D626FA2D63008B3D8A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CC3806FE2703F7C7006AA4AF /* PayCardCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -169,6 +196,7 @@
 		CCDD92DE26FA37BF008B3D8A /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				CC3807002703FAC2006AA4AF /* UIExtensions */,
 				CCDD92DF26FA37C7008B3D8A /* Customs */,
 			);
 			path = Global;
@@ -305,10 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDD92BC26FA28C7008B3D8A /* ViewController.swift in Sources */,
+				CC3807042704018C006AA4AF /* CALayer+.swift in Sources */,
 				CCDD92E326FB043E008B3D8A /* PayMenuNode.swift in Sources */,
 				CCDD92DA26FA2DA3008B3D8A /* PayNodeController.swift in Sources */,
 				CCDD92B826FA28C7008B3D8A /* AppDelegate.swift in Sources */,
+				CC3807022703FAD1006AA4AF /* UIColor+.swift in Sources */,
 				CCDD92BA26FA28C7008B3D8A /* SceneDelegate.swift in Sources */,
+				CC3806FF2703F7C7006AA4AF /* PayCardCollectionViewCell.swift in Sources */,
+				CC3806FD2703F76F006AA4AF /* CardModel.swift in Sources */,
 				CCDD92CE26FA2AA1008B3D8A /* StarbucksTabBarController.swift in Sources */,
 				CCDD92DD26FA33AA008B3D8A /* BaseScrollNode.swift in Sources */,
 				CCDD92E126FA37F0008B3D8A /* CustomNavigationBar.swift in Sources */,
