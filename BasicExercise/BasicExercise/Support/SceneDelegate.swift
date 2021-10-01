@@ -16,8 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     if let windowScene = scene as? UIWindowScene {
       
       let window = UIWindow(windowScene: windowScene)
-      let rootVC = KakaoFriendNodeController()
-      rootVC.view.backgroundColor = .white
+      let rootVC = AppleMusicNodeController()
+      rootVC.view.backgroundColor = .black
       window.rootViewController = rootVC
       self.window = window
       window.makeKeyAndVisible()

@@ -18,7 +18,7 @@ struct KakaoFriendsModel {
        profileNameText: String?,
        profileMessageText: String?) {
     
-    self.profileImageName = profileImageName ?? "freindtabProfileImg"
+    self.profileImageName = profileImageName ?? "friendtabProfileImg"
     self.profileNameText = profileNameText ?? ""
     self.profileMessageText = profileMessageText ?? ""
   }
