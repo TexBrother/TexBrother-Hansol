@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		912A93FCF008DEC8C2D9A8D9 /* Pods_Starbucks_Clone_TexBrother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008B44055C8D19550BEAF50 /* Pods_Starbucks_Clone_TexBrother.framework */; };
+		CC2F69D0270D45CF009E4F1C /* ASDisplayNode+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2F69CF270D45CF009E4F1C /* ASDisplayNode+.swift */; };
 		CC3806FD2703F76F006AA4AF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3806FC2703F76F006AA4AF /* CardModel.swift */; };
 		CC3806FF2703F7C7006AA4AF /* PayCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3806FE2703F7C7006AA4AF /* PayCardCollectionViewCell.swift */; };
 		CC3807022703FAD1006AA4AF /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3807012703FAD0006AA4AF /* UIColor+.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC2F69CF270D45CF009E4F1C /* ASDisplayNode+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+.swift"; sourceTree = "<group>"; };
 		CC3806FC2703F76F006AA4AF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		CC3806FE2703F7C7006AA4AF /* PayCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC3807012703FAD0006AA4AF /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				CC3807012703FAD0006AA4AF /* UIColor+.swift */,
 				CC3807032704018C006AA4AF /* CALayer+.swift */,
+				CC2F69CF270D45CF009E4F1C /* ASDisplayNode+.swift */,
 			);
 			path = UIExtensions;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDD92BC26FA28C7008B3D8A /* ViewController.swift in Sources */,
+				CC2F69D0270D45CF009E4F1C /* ASDisplayNode+.swift in Sources */,
 				CC3807042704018C006AA4AF /* CALayer+.swift in Sources */,
 				CCDD92E326FB043E008B3D8A /* PayMenuNode.swift in Sources */,
 				CCDD92DA26FA2DA3008B3D8A /* PayNodeController.swift in Sources */,

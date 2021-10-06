@@ -8,6 +8,7 @@
 import Foundation
 
 import AsyncDisplayKit
+import UIKit
 
 // MARK: - PayMenuNode
 
@@ -32,7 +33,6 @@ final class PayMenuNode: ASDisplayNode {
     private let separatorView: ASDisplayNode = {
         let node = ASDisplayNode()
         node.backgroundColor = .gray
-        node.style.preferredSize = CGSize(width: 1, height: 5)
         return node
     }()
     
@@ -40,6 +40,12 @@ final class PayMenuNode: ASDisplayNode {
     
     override init() {
         super.init()
+        automaticallyManagesSubnodes = true
+        automaticallyRelayoutOnSafeAreaChanges = true
+    }
+    
+    override func layout() {
+        super.layout()
     }
 }
 
@@ -55,7 +61,20 @@ extension PayMenuNode {
             spacing: 0,
             justifyContent: .spaceAround,
             alignItems: .center,
-            children: [couponButton, separatorView, giftButton]
+            children:
+                [
+                    couponButton.styled {
+                        $0.flexShrink = 0.5
+                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width-1/2, height: 30)
+                    },
+                    separatorView.styled {
+                        $0.preferredSize = CGSize(width: 1, height: 10)
+                    },
+                    giftButton.styled {
+                        $0.flexShrink = 0.5
+                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width-1/2, height: 30)
+                    }
+                ]
         )
     }
 }
