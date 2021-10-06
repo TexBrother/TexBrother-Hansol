@@ -1,16 +1,17 @@
 //
-//  CALayer+.swift
+//  ASDisplayNode+.swift
 //  Starbucks_Clone_TexBrother
 //
-//  Created by 노한솔 on 2021/09/29.
+//  Created by 노한솔 on 2021/10/06.
+//
 
+import AsyncDisplayKit
 
-import UIKit
-
-extension CALayer {
+extension ASDisplayNode {
+    
     func applyCardShadow(
         color: UIColor = .black,
-        alpha: Float = 0.16,
+        alpha: CGFloat = 0.16,
         x: CGFloat = 0,
         y: CGFloat = 3,
         blur: CGFloat = 6
@@ -19,5 +20,6 @@ extension CALayer {
         shadowOpacity = alpha
         shadowOffset = CGSize(width: x, height: y)
         shadowRadius = blur / 1.0
+        clipsToBounds = false
     }
 }

@@ -17,12 +17,13 @@ final class PayCardCollectionViewCell: ASCellNode {
     
     private let cardImageNode: ASImageNode = {
        let node = ASImageNode()
-        node.style.preferredSize = CGSize(width: 296, height: 186)
+        node.contentMode = .scaleAspectFill
         return node
     }()
     
     private let titleLabelNode: ASTextNode = {
         let node = ASTextNode()
+        node.style.flexShrink = 1.0
         return node
     }()
     
@@ -41,6 +42,7 @@ final class PayCardCollectionViewCell: ASCellNode {
     private let barcodeImageNode: ASImageNode = {
         let node = ASImageNode()
         node.image = UIImage(named: "barcode")
+        node.contentMode = .scaleAspectFit
         return node
     }()
     
@@ -90,6 +92,7 @@ final class PayCardCollectionViewCell: ASCellNode {
         let node = ASImageNode()
         node.image = UIImage(named: "autoChargeIcon")
         node.style.preferredSize = CGSize(width: 27.5, height: 21.3)
+        node.style.flexGrow = 1.0
         return node
     }()
     
@@ -115,6 +118,7 @@ final class PayCardCollectionViewCell: ASCellNode {
         let node = ASImageNode()
         node.image = UIImage(named: "generalChargeIcon")
         node.style.preferredSize = CGSize(width: 27.5, height: 21.3)
+        node.style.flexGrow = 1.0
         return node
     }()
     
@@ -132,10 +136,23 @@ final class PayCardCollectionViewCell: ASCellNode {
     
     // MARK: - LifeCycles
     
-    override init() {
+    init(model: CardModel?) {
         super.init()
         self.automaticallyManagesSubnodes = true
         self.automaticallyRelayoutOnSafeAreaChanges = true
+        
+        if let card = model {
+            dataBind(cardImage: card.cardImageName, title: card.title, price: card.price, isFavorite: false)
+        }
+    }
+    
+    override func didLoad() {
+        super.didLoad()
+        self.applyCardShadow()
+    }
+    
+    override func layout() {
+        super.layout()
     }
 }
 
@@ -151,7 +168,6 @@ extension PayCardCollectionViewCell {
         priceLabelNode.style.spacingAfter = 13
         barcodeImageNode.style.spacingAfter = 6
         cardNumberTextNode.style.spacingAfter = 8
-        validationLayoutSpec().style.spacingAfter = 33
         
         let layout = ASStackLayoutSpec(
             direction: .vertical,
@@ -159,12 +175,16 @@ extension PayCardCollectionViewCell {
             justifyContent: .center,
             alignItems: .center,
             children: [
-                cardImageNode,
+                cardImageNode.styled {
+                    $0.height = ASDimension(unit: .points, value: 189)
+                },
                 titleLabelNode,
                 priceLabelNode,
                 barcodeImageNode,
                 cardNumberTextNode,
-                validationLayoutSpec(),
+                validationLayoutSpec().styled {
+                    $0.spacingAfter = 33
+                },
                 chargeLayoutSpec()
             ]
         )

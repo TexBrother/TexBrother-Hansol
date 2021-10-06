@@ -22,6 +22,9 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
         
         let node = ASCollectionNode(frame: .zero, collectionViewLayout: layout)
         node.isPagingEnabled = true
+        node.showsHorizontalScrollIndicator = false
+        node.delegate = self
+        node.dataSource = self
         return node
     }()
     
@@ -30,7 +33,6 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
     private let navigationView: CustomNavigationBar = {
         let node = CustomNavigationBar()
         node.setupBar(isBackButton: false, right: "listIcon")
-        node.style.height = ASDimension(unit: .points, value: 30)
         return node
     }()
     
@@ -38,7 +40,7 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
         $0.attributedText = NSAttributedString(
             string: "Pay",
             attributes: [
-                .font: UIFont.boldSystemFont(ofSize: 24),
+                .font: UIFont.boldSystemFont(ofSize: 28),
                 .foregroundColor: UIColor.black
             ]
         )
@@ -46,14 +48,14 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
     
     private let menuView = PayMenuNode().then {
         $0.backgroundColor = .clear
-        $0.style.height = ASDimension(unit: .points, value: 40)
+        $0.style.flexGrow = 1.0
     }
     
     private let bannerButton: ASButtonNode = {
         let node = ASButtonNode()
         node.backgroundColor = .black
         node.setBackgroundImage(UIImage(named: "banner"), for: .normal)
-        node.style.height = ASDimension(unit: .points, value: 60)
+        node.style.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 60)
         return node
     }()
     
@@ -69,9 +71,9 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
     override init() {
         super.init(node: ASScrollNode())
         node.automaticallyManagesSubnodes = true
+        node.automaticallyManagesContentSize = true
         node.automaticallyRelayoutOnSafeAreaChanges = true
-        cardCollectionNode.delegate = self
-        cardCollectionNode.dataSource = self
+        node.scrollableDirections = [.up, .down]
         node.layoutSpecBlock = { [weak self] (scrollNode, constraintedSize) -> ASLayoutSpec in
             return self?.layoutSpecThatFits(constraintedSize) ?? ASLayoutSpec()
         }
@@ -95,39 +97,64 @@ extension PayNodeController {
     // MARK: - Layout Helpers
     
     private func layoutSpecThatFits(_ constraintedSize: ASSizeRange) -> ASLayoutSpec {
-        return ASInsetLayoutSpec(
-            insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20),
-            child: componentsLayoutSpec()
-        )
+        return componentsLayoutSpec()
     }
     
     private func componentsLayoutSpec() -> ASLayoutSpec {
         navigationView.style.spacingAfter = 22
-        titleLabel.style.spacingAfter = 24
         cardCollectionNode.style.spacingAfter = 28
-        bannerButton.style.spacingAfter = 20
+        bannerButton.style.spacingAfter = 50
         
         let layout = ASStackLayoutSpec(
             direction: .vertical,
             spacing: 0,
-            justifyContent: .spaceAround,
+            justifyContent: .start,
             alignItems: .center,
-            children: [navigationView, titleLabel, cardCollectionNode, menuView, bannerButton])
+            children:
+                [
+                    navigationView.styled {
+                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 30)
+                        $0.flexGrow = 1.0
+                    },
+                    titleInsetLayoutSpec().styled {
+                        $0.spacingAfter = 24
+                    },
+                    cardCollectionNode.styled {
+                        $0.maxHeight = ASDimension(unit: .points, value: 475)
+                    },
+                    menuView.styled {
+                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 72)
+                    },
+                    bannerButton.styled {
+                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 85)
+                        $0.spacingAfter = 0
+                    }
+                ]
+        )
         return layout
+    }
+    
+    private func titleInsetLayoutSpec() -> ASLayoutSpec {
+        return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: .infinity), child: titleLabel)
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension PayNodeController: ASCollectionDelegateFlowLayout {
+extension PayNodeController: ASCollectionDelegateFlowLayout, UICollectionViewDelegateFlowLayout {
     func collectionNode(_ collectionNode: ASCollectionNode, constrainedSizeForItemAt indexPath: IndexPath) -> ASSizeRange {
-        let width = UIScreen.main.bounds.width - 40
-        return ASSizeRange(min: .zero, max: CGSize(width: width, height: 475))
+        let width = UIScreen.main.bounds.width - 24
+        return ASSizeRange(min: CGSize(width: width, height: 475), max: CGSize(width: width, height: 475))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        return UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 15
+    }
+    
 }
 
 extension PayNodeController: ASCollectionDataSource {
@@ -138,15 +165,14 @@ extension PayNodeController: ASCollectionDataSource {
     func collectionNode(_ collectionNode: ASCollectionNode, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
         return {
             guard self.cardList.count > indexPath.row else { return ASCellNode() }
-            let payCell = PayCardCollectionViewCell()
-//            payCell.layer.applyCardShadow()
+            let payCell = PayCardCollectionViewCell(model: self.cardList[indexPath.item])
             payCell.dataBind(
                 cardImage: self.cardList[indexPath.item].cardImageName,
                 title: self.cardList[indexPath.item].title,
                 price: self.cardList[indexPath.item].price,
                 isFavorite: false
             )
-            return PayCardCollectionViewCell()
+            return payCell
         }
     }
 }

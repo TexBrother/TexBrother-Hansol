@@ -17,7 +17,6 @@ class CustomNavigationBar: ASDisplayNode {
     
     let backButton: ASButtonNode = {
         let node = ASButtonNode()
-        node.backgroundColor = .black
         node.style.preferredSize = CGSize(width: 15, height: 15)
         return node
     }()
@@ -30,7 +29,6 @@ class CustomNavigationBar: ASDisplayNode {
     
     let rightButton: ASButtonNode = {
         let node = ASButtonNode()
-        node.backgroundColor = .black
         node.isHidden = true
         node.style.preferredSize = CGSize(width: 15, height: 15)
         return node
@@ -40,6 +38,8 @@ class CustomNavigationBar: ASDisplayNode {
     
     override init() {
         super.init()
+        automaticallyManagesSubnodes = true
+        automaticallyRelayoutOnSafeAreaChanges = true
     }
 }
 
@@ -55,7 +55,20 @@ extension CustomNavigationBar {
             spacing: 0,
             justifyContent: .spaceBetween,
             alignItems: .center,
-            children: [backButton, titleLabel, rightButton]
+            children:
+                [
+                    backButton.styled {
+                        $0.preferredSize = CGSize(width: 21, height: 19)
+                        $0.flexGrow = 0.5
+                    },
+                    titleLabel.styled {
+                        $0.flexShrink = 1.0
+                    },
+                    rightButton.styled {
+                        $0.preferredSize = CGSize(width: 21, height: 19)
+                        $0.flexGrow = 0.5
+                    }
+                ]
         )
     }
     
