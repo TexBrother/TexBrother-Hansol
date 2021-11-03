@@ -148,11 +148,11 @@ final class PayCardCollectionViewCell: ASCellNode {
     
     override func didLoad() {
         super.didLoad()
-        self.applyCardShadow()
     }
     
     override func layout() {
         super.layout()
+        self.applyCardShadow()
     }
 }
 

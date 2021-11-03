@@ -15,9 +15,12 @@ extension CALayer {
         y: CGFloat = 3,
         blur: CGFloat = 6
     ) {
+        masksToBounds = false
         shadowColor = color.cgColor
         shadowOpacity = alpha
         shadowOffset = CGSize(width: x, height: y)
         shadowRadius = blur / 1.0
+        
+        shadowPath = UIBezierPath(rect: self.bounds).cgPath
     }
 }

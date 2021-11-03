@@ -46,9 +46,12 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
         )
     }
     
+    private let listButton = UIButton().then {
+        $0.setBackgroundImage(UIImage(named: "listIcon"), for: .normal)
+    }
+    
     private let menuView = PayMenuNode().then {
         $0.backgroundColor = .clear
-        $0.style.flexGrow = 1.0
     }
     
     private let bannerButton: ASButtonNode = {
@@ -87,6 +90,7 @@ final class PayNodeController: ASDKViewController<ASScrollNode> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configNavigation()
     }
 }
 
@@ -101,33 +105,37 @@ extension PayNodeController {
     }
     
     private func componentsLayoutSpec() -> ASLayoutSpec {
-        navigationView.style.spacingAfter = 22
-        cardCollectionNode.style.spacingAfter = 28
-        bannerButton.style.spacingAfter = 50
         
         let layout = ASStackLayoutSpec(
             direction: .vertical,
             spacing: 0,
-            justifyContent: .start,
+            justifyContent: .spaceAround,
             alignItems: .center,
             children:
                 [
-                    navigationView.styled {
-                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 30)
-                        $0.flexGrow = 1.0
-                    },
-                    titleInsetLayoutSpec().styled {
-                        $0.spacingAfter = 24
-                    },
+//                    navigationView.styled {
+//                        $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 30)
+//                        $0.flexGrow = 1.0
+//                    },
+//                    titleInsetLayoutSpec().styled {
+//                        $0.spacingAfter = 24
+//                    },
                     cardCollectionNode.styled {
                         $0.maxHeight = ASDimension(unit: .points, value: 475)
+                        $0.flexGrow = 1.0
+                        $0.spacingBefore = 24
+                        $0.spacingAfter = 0
                     },
                     menuView.styled {
                         $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 72)
+                        $0.flexGrow = 1.0
+                        $0.spacingAfter = 0
                     },
                     bannerButton.styled {
                         $0.preferredSize = CGSize(width: UIScreen.main.bounds.width, height: 85)
-                        $0.spacingAfter = 0
+                        $0.flexGrow = 1.0
+                        $0.maxHeight = ASDimension(unit: .points, value: 85)
+//                        $0.spacingAfter = 0
                     }
                 ]
         )
@@ -135,7 +143,24 @@ extension PayNodeController {
     }
     
     private func titleInsetLayoutSpec() -> ASLayoutSpec {
-        return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: .infinity), child: titleLabel)
+        return ASInsetLayoutSpec(
+            insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: .infinity),
+            child: titleLabel.styled {
+                $0.height = ASDimension(unit: .points, value: 33)
+            }
+        )
+    }
+    
+    // MARK: - General Helpers
+    
+    private func configNavigation() {
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Pay"
+        navigationItem.largeTitleDisplayMode = .always
+        
+        let rightIcon = UIBarButtonItem(customView: listButton)
+        navigationItem.rightBarButtonItem = rightIcon
     }
 }
 
